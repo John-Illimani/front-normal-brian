@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:20000", // Cambia esto según el puerto donde corre tu Node.js
+  baseURL: "https://back-normal-brian.vercel.app/", // Cambia esto según el puerto donde corre tu Node.js
   withCredentials: true,
 });
 
