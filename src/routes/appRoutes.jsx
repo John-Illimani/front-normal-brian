@@ -11,6 +11,7 @@ import { AtletaDashboard } from "../pages/atleta/AtletaDashboard";
 import { AtletaSidebar } from "../components/layouts/AtletaSidebar";
 import { MiFichaDeportiva } from "../pages/atleta/MiFichaDeportiva";
 import { MiCuentaAtleta } from "../pages/atleta/MiCuentaAtleta";
+import { MiCuentaAdmin } from "../pages/administrador/MiCuentaAdmin";
 
 function AppRoutes() {
   return (
@@ -27,6 +28,7 @@ function AppRoutes() {
             <Route path="dashboard" element={<AdminDashboard />} />
             <Route path="usuarios" element={<AdminUsuarios />} />
             <Route path="reportes" element={<ReportesUsuarios />} />
+            <Route path="cuenta" element={<MiCuentaAdmin />} />
           </Route>
         </Route>
         <Route element={<ProtectedRoute allowedRoles={["atleta"]} />}>

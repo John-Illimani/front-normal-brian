@@ -24,6 +24,12 @@ export const AdminSidebar = ({ setAuthToken }) => {
       onClick: () => navigate('/admin/dashboard')
     },
     {
+      id: '/admin/cuenta',
+      label: 'Mi Cuenta',
+      icon: Users,
+      onClick: () => navigate('/admin/cuenta')
+    },
+    {
       id: '/admin/usuarios',
       label: 'Gestión Usuarios',
       icon: Users,
