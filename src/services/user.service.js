@@ -26,3 +26,10 @@ export const deleteUserRequest = async (id) => {
   return response.data;
 };
 
+
+
+// Eliminar múltiples usuarios por lote (IDs array)
+export const deleteMultipleUsersRequest = async (ids) => {
+  const response = await API.post('/api/usuarios/delete-batch', { ids });
+  return response.data;
+};

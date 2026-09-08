@@ -16,18 +16,27 @@ export const AtletaSidebar = ({ setAuthToken }) => {
   };
 
   const atletaMenuItems = [
+
+   
     {
       id: '/atleta/dashboard',
       label: 'Panel Principal',
       icon: LayoutDashboard,
       onClick: () => navigate('/atleta/dashboard')
     },
+     {
+      id: '/atleta/cuenta',
+      label: 'Mi Cuenta',
+      icon: Award,
+      onClick: () => navigate('/atleta/cuenta')
+    },
+    
     {
       id: '/atleta/fichas',
       label: 'Fichas deportivas',
       icon: Award,
       onClick: () => navigate('/atleta/fichas')
-    },
+    }
     
   
   ];

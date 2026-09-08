@@ -62,7 +62,7 @@ export const Login = ({ setAuthToken }) => {
 
         <h2 className="text-2xl font-black text-white tracking-tight mb-2">Panel de Acceso</h2>
         <p className="text-xs text-slate-400 text-center leading-relaxed mb-8">
-          Federación Boliviana de Gimnasia<br />Sistema de Gestión y Reportes Oficiales
+          Federación Boliviana de Gimnasia<br />
         </p>
 
         {error && (

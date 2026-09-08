@@ -10,6 +10,7 @@ import { ReportesUsuarios } from "../pages/administrador/ReportesUsuarios";
 import { AtletaDashboard } from "../pages/atleta/AtletaDashboard";
 import { AtletaSidebar } from "../components/layouts/AtletaSidebar";
 import { MiFichaDeportiva } from "../pages/atleta/MiFichaDeportiva";
+import { MiCuentaAtleta } from "../pages/atleta/MiCuentaAtleta";
 
 function AppRoutes() {
   return (
@@ -34,6 +35,7 @@ function AppRoutes() {
             <Route path="dashboard" element={<AtletaDashboard />} />
             <Route path="fichas" element={<MiFichaDeportiva />} />
             <Route path="reportes" element={<ReportesUsuarios />} />
+            <Route path="cuenta" element={<MiCuentaAtleta />} />
           </Route>
         </Route>
     
