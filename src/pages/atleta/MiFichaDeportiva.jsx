@@ -318,7 +318,7 @@ export const MiFichaDeportiva = () => {
   const pdfConfig = [
     { num: 1, label: "Documento #1: Pasaporte", base64Key: "pdf_1_base64", nameKey: "pdf_1_nombre", urlKey: "pdf_1_url" },
     { num: 2, label: "Documento #2: Certificación WADA", base64Key: "pdf_2_base64", nameKey: "pdf_2_nombre", urlKey: "pdf_2_url" },
-    { num: 3, label: "Documento #3: Otros Documentos", base64Key: "pdf_3_base64", nameKey: "pdf_3_nombre", urlKey: "pdf_3_url" },
+    { num: 3, label: "Documento #3: Carnet de Identidad", base64Key: "pdf_3_base64", nameKey: "pdf_3_nombre", urlKey: "pdf_3_url" },
   ];
 
   return (

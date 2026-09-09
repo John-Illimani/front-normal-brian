@@ -90,7 +90,7 @@ export const ReportesUsuarios = () => {
         foto_representando_a_bolivia_url: '',
         pdf_1_base64: '', pdf_1_nombre: 'Pasaporte.pdf',
         pdf_2_base64: '', pdf_2_nombre: 'Certificacion_WADA.pdf',
-        pdf_3_base64: '', pdf_3_nombre: 'Otros_Documentos.pdf',
+        pdf_3_base64: '', pdf_3_nombre: 'Carnet_de_Identidad.pdf',
         resena_perfil_deportivo: ''
       },
       representacion_nacional: [],
@@ -695,7 +695,7 @@ export const ReportesUsuarios = () => {
                   {[
                     { num: 1, label: "Documento #1: Pasaporte", base64: atletaCurriculum.perfil?.pdf_1_url, name: atletaCurriculum.perfil?.pdf_1_nombre },
                     { num: 2, label: "Documento #2: Certificación WADA", base64: atletaCurriculum.perfil?.pdf_2_url, name: atletaCurriculum.perfil?.pdf_2_nombre },
-                    { num: 3, label: "Documento #3: Otros Documentos", base64: atletaCurriculum.perfil?.pdf_3_url, name: atletaCurriculum.perfil?.pdf_3_nombre },
+                    { num: 3, label: "Documento #3: Carnet de Identidad", base64: atletaCurriculum.perfil?.pdf_3_url, name: atletaCurriculum.perfil?.pdf_3_nombre },
                   ].map((doc) => (
                     <div key={doc.num} className="bg-white p-3 border rounded-xl flex flex-col justify-between text-center space-y-2">
                       <span className="font-bold text-slate-700">{doc.label}</span>
