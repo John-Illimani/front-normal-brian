@@ -35,7 +35,7 @@ export const MiFichaDeportiva = () => {
     lugar_nacimiento_departamento: "La Paz",
     club: "",
     asociacion_departamental: "",
-    disciplina: "Gimnasia Artística",
+    disciplina: "WAG",
     categoria: "Junior", // Age Group, Junior, Senior
     nivel: "Nivel FIG",
     anio_inicio_gimnasia: "",
@@ -104,6 +104,7 @@ export const MiFichaDeportiva = () => {
         setMiAtletaId(data.perfil.id);
         setPerfil({
           ...data.perfil,
+          disciplina: data.perfil.disciplina || "WAG",
           categoria: data.perfil.categoria || "Junior",
           fecha_nacimiento: data.perfil.fecha_nacimiento?.split("T")[0] || "",
           ultima_actualizacion: data.perfil.ultima_actualizacion?.split("T")[0] || new Date().toISOString().split("T")[0],
@@ -415,9 +416,20 @@ export const MiFichaDeportiva = () => {
         {activeFormTab === "perfil" && (
           <div className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div>
-                <label className="block text-xs font-bold text-slate-600 uppercase mb-1">Disciplina Encabezado</label>
-                <input type="text" value={perfil.disciplina_encabezado} onChange={e => setPerfil({...perfil, disciplina_encabezado: e.target.value})} className="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-xl text-xs" />
+             <div>
+                <label className="block text-xs font-bold text-indigo-900 uppercase mb-1">Disciplina *</label>
+                <select
+                  value={perfil.disciplina}
+                  onChange={e => setPerfil({ ...perfil, disciplina: e.target.value })}
+                  className="w-full px-3.5 py-2 bg-indigo-50/60 border border-indigo-200 rounded-xl text-xs font-bold text-indigo-950"
+                  required
+                >
+                  <option value="WAG">WAG</option>
+                  <option value="MAG">MAG</option>
+                  <option value="GR">GR</option>
+                  <option value="TRA">TRA</option>
+                  <option value="AER">AER</option>
+                </select>
               </div>
 
               <div>
@@ -465,7 +477,7 @@ export const MiFichaDeportiva = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3 border-t border-slate-100">
               <div>
-                <label className="block text-xs font-bold text-indigo-900 uppercase mb-1">Año de Inicio en la Gimnasia</label>
+                <label className="block text-xs font-bold text-indigo-900 uppercase mb-1">Número de Licencia FIG</label>
                 <input type="number" placeholder="Ej. 2016" value={perfil.anio_inicio_gimnasia} onChange={e => setPerfil({...perfil, anio_inicio_gimnasia: e.target.value})} className="w-full px-3.5 py-2 bg-indigo-50/40 border border-indigo-200 rounded-xl text-xs font-bold" />
               </div>
               <div>

@@ -173,7 +173,7 @@ export const generarFichaPDF = async (data) => {
         `Asociación Departamental: ${perfil.asociacion_departamental || perfil.equipo_asociacion || "-"}\n` +
         `Disciplina / Categoría / Nivel: ${perfil.disciplina || "-"} / ${perfil.categoria || "-"} / ${perfil.nivel || "-"}`,
 
-        `Año de inicio en la gimnasia: ${perfil.anio_inicio_gimnasia || perfil.anio_inicio || "-"}\n` +
+        `Número de Licencia FIG: ${perfil.anio_inicio_gimnasia || perfil.anio_inicio || "-"}\n` +
         `Entrenador/a actual: ${perfil.entrenador_actual || perfil.equipo_entrenador_principal || "-"}\n` +
         `Años de experiencia competitiva: ${perfil.anios_experiencia_competitiva || 0} años\n` +
         `Estatura / Peso: ${perfil.estatura_cm ? perfil.estatura_cm + " cm" : "-"} / ${perfil.peso_kg ? perfil.peso_kg + " kg" : "-"}\n` +
